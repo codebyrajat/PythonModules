@@ -1,0 +1,18 @@
+'''. Program to Remove all Characters in Second String which are present in First String.       
+Problem Text:
+Given a two string
+
+Input:
+Enter string1: programming
+Enter string2: computer
+Output:
+On removing characters from second string we get: cute
+'''
+
+x = "abcdefg"
+y =  "acxzemn"
+z=""
+for i in range(0,len(y)):
+    if(y[i] not in x):
+        z=z+y[i]
+print(z)
