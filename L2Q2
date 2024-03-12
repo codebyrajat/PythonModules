@@ -1,0 +1,19 @@
+'''2.	Write a program to find the largest and smallest word in a string.
+Problem Text: If string having more than one largest or smallest word than output will be -1.
+'''
+x=input("Enter Sentence :")
+y=x.split()
+a= sorted(y,key=len)
+print("The largest word is: "+a[len(a)-1])
+print("The smallest word is: "+a[0])
+
+#for logical method to find max length word :
+"""print(y)
+count=0
+for i in range(len(y)):
+    length=(len(y[i]))
+    if count<length:
+        count=length
+        max=y[i]
+print(y[i])"""
+
